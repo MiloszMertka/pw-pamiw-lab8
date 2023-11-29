@@ -10,7 +10,9 @@ public enum Endpoints {
 
     CARS("cars"),
     ENGINES("engines"),
-    EQUIPMENT_OPTIONS("equipmentOptions");
+    EQUIPMENT_OPTIONS("equipmentOptions"),
+    LOGIN("login"),
+    REGISTER("register");
 
     private static final String ENDPOINTS_FILE = "endpoints.json";
     private static final ObjectMapper objectMapper = new ObjectMapper();

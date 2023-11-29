@@ -3,6 +3,8 @@
   "endpoints": {
     "cars": "/cars",
     "engines": "/engines",
-    "equipmentOptions": "/equipment-options"
+    "equipmentOptions": "/equipment-options",
+    "login": "/auth/login",
+    "register": "/auth/register"
   }
 }

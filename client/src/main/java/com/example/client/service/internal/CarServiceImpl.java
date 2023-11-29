@@ -2,14 +2,21 @@ package com.example.client.service.internal;
 
 import com.example.client.Endpoints;
 import com.example.client.model.Car;
+import com.example.client.service.AuthStateService;
 import com.example.client.service.CarService;
+import com.google.inject.Inject;
 
 import java.util.List;
 
 public class CarServiceImpl implements CarService {
 
     private static final String CARS_ENDPOINT = Endpoints.CARS.getEndpoint();
-    private final CrudService<Car> crudService = new CrudService<>();
+    private final CrudService<Car> crudService;
+
+    @Inject
+    public CarServiceImpl(AuthStateService authStateService) {
+        crudService = new CrudService<>(authStateService.getJwtToken());
+    }
 
     @Override
     public List<Car> getAllCars() {

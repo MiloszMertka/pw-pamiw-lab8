@@ -20,7 +20,10 @@ public enum Views {
     ENGINES_VIEW("engines-view.fxml"),
     ENGINE_FORM_VIEW("engine-form-view.fxml"),
     EQUIPMENT_OPTIONS_VIEW("equipment-options-view.fxml"),
-    EQUIPMENT_OPTION_FORM_VIEW("equipment-option-form-view.fxml");
+    EQUIPMENT_OPTION_FORM_VIEW("equipment-option-form-view.fxml"),
+    UNAUTHENTICATED_VIEW("unauthenticated-view.fxml"),
+    LOGIN_VIEW("login-view.fxml"),
+    REGISTER_VIEW("register-view.fxml");
 
     private static final int APP_WIDTH = 512;
     private static final int APP_HEIGHT = 768;
