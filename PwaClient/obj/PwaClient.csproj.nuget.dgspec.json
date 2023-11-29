@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/miloszmertka/Desktop/Studia/sem5/Programowanie Aplikacji Mobilnych i Webowych/pw-pamiw-lab7/PwaClient/PwaClient.csproj": {}
+    "/Users/miloszmertka/Desktop/Studia/sem5/Programowanie Aplikacji Mobilnych i Webowych/pw-pamiw-lab8/PwaClient/PwaClient.csproj": {}
   },
   "projects": {
-    "/Users/miloszmertka/Desktop/Studia/sem5/Programowanie Aplikacji Mobilnych i Webowych/pw-pamiw-lab7/PwaClient/PwaClient.csproj": {
+    "/Users/miloszmertka/Desktop/Studia/sem5/Programowanie Aplikacji Mobilnych i Webowych/pw-pamiw-lab8/PwaClient/PwaClient.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/miloszmertka/Desktop/Studia/sem5/Programowanie Aplikacji Mobilnych i Webowych/pw-pamiw-lab7/PwaClient/PwaClient.csproj",
+        "projectUniqueName": "/Users/miloszmertka/Desktop/Studia/sem5/Programowanie Aplikacji Mobilnych i Webowych/pw-pamiw-lab8/PwaClient/PwaClient.csproj",
         "projectName": "PwaClient",
-        "projectPath": "/Users/miloszmertka/Desktop/Studia/sem5/Programowanie Aplikacji Mobilnych i Webowych/pw-pamiw-lab7/PwaClient/PwaClient.csproj",
+        "projectPath": "/Users/miloszmertka/Desktop/Studia/sem5/Programowanie Aplikacji Mobilnych i Webowych/pw-pamiw-lab8/PwaClient/PwaClient.csproj",
         "packagesPath": "/Users/miloszmertka/.nuget/packages/",
-        "outputPath": "/Users/miloszmertka/Desktop/Studia/sem5/Programowanie Aplikacji Mobilnych i Webowych/pw-pamiw-lab7/PwaClient/obj/",
+        "outputPath": "/Users/miloszmertka/Desktop/Studia/sem5/Programowanie Aplikacji Mobilnych i Webowych/pw-pamiw-lab8/PwaClient/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/miloszmertka/.nuget/NuGet/NuGet.Config"
@@ -39,6 +39,14 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "Blazored.LocalStorage": {
+              "target": "Package",
+              "version": "[4.4.0, )"
+            },
+            "Microsoft.AspNetCore.Components.Authorization": {
+              "target": "Package",
+              "version": "[7.0.14, )"
+            },
             "Microsoft.AspNetCore.Components.WebAssembly": {
               "target": "Package",
               "version": "[7.0.13, )"

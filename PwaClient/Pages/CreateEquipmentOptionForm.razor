@@ -1,6 +1,8 @@
 @page "/equipment-options/create"
 @inject HttpClient HttpClient
 
+@attribute [Authorize]
+
 <h1>Create Equipment Option</h1>
 
 @if (isFormSubmitted)

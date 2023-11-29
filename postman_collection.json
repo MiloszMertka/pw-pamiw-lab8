@@ -602,34 +602,6 @@
 						}
 					},
 					"response": []
-				},
-				{
-					"name": "Change password",
-					"request": {
-						"method": "PUT",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n    \"password\": \"password\"\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "{{base_url}}/auth/change-password/{{id}}",
-							"host": [
-								"{{base_url}}"
-							],
-							"path": [
-								"auth",
-								"change-password",
-								"{{id}}"
-							]
-						}
-					},
-					"response": []
 				}
 			]
 		}

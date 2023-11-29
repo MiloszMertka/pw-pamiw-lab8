@@ -1,7 +1,6 @@
 package com.example.api.service.internal;
 
 import com.example.api.config.JwtConfig;
-import com.example.api.dto.ChangePasswordDto;
 import com.example.api.dto.JwtDto;
 import com.example.api.dto.LoginUserDto;
 import com.example.api.dto.RegisterUserDto;
@@ -46,15 +45,6 @@ class AuthService implements AuthUseCases, UserDetailsService {
         checkIfUserAlreadyExists(registerUserDto.username());
         final var encodedPassword = passwordEncoder.encode(registerUserDto.password());
         final var user = new User(registerUserDto.username(), encodedPassword);
-        userRepository.save(user);
-    }
-
-    @Override
-    public void changePassword(Long id, ChangePasswordDto changePasswordDto) {
-        final var user = userRepository.findById(id).orElseThrow(
-                () -> new NoSuchElementException(USER_NOT_FOUND_ERROR_MESSAGE));
-        final var encodedPassword = passwordEncoder.encode(changePasswordDto.password());
-        user.setPassword(encodedPassword);
         userRepository.save(user);
     }
 

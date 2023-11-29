@@ -1,6 +1,5 @@
 package com.example.api.controller;
 
-import com.example.api.dto.ChangePasswordDto;
 import com.example.api.dto.JwtDto;
 import com.example.api.dto.LoginUserDto;
 import com.example.api.dto.RegisterUserDto;
@@ -9,7 +8,10 @@ import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/api/auth")
@@ -28,12 +30,6 @@ class AuthController {
     public ResponseEntity<Void> register(@RequestBody @Valid RegisterUserDto registerUserDto) {
         authUseCases.register(registerUserDto);
         return ResponseEntity.status(HttpStatus.CREATED).build();
-    }
-
-    @PutMapping("/change-password/{id}")
-    public ResponseEntity<Void> changePassword(@PathVariable Long id, @RequestBody @Valid ChangePasswordDto changePasswordDto) {
-        authUseCases.changePassword(id, changePasswordDto);
-        return ResponseEntity.noContent().build();
     }
 
 }
