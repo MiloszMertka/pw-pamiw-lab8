@@ -16,6 +16,7 @@ public class DatabaseSeeder implements CommandLineRunner {
     private final EngineSeeder engineSeeder;
     private final EquipmentOptionSeeder equipmentOptionSeeder;
     private final CarSeeder carSeeder;
+    private final UserSeeder userSeeder;
 
     @Override
     public void run(String... args) {
@@ -23,6 +24,7 @@ public class DatabaseSeeder implements CommandLineRunner {
             engineSeeder.seed(10);
             equipmentOptionSeeder.seed(5);
             carSeeder.seed(10);
+            userSeeder.seed(1);
         }
     }
 

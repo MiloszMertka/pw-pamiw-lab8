@@ -12,7 +12,6 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/cars")
-@CrossOrigin(origins = "*")
 @RequiredArgsConstructor
 class CarController {
 

@@ -12,7 +12,6 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/equipment-options")
-@CrossOrigin(origins = "*")
 @RequiredArgsConstructor
 class EquipmentOptionController {
 
